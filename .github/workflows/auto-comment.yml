@@ -3,6 +3,8 @@ name: Auto Comment on New Issue
 on:
   issues:
     types: [opened]
+permissions:
+  issues: write
 jobs:
   comment:
     runs-on: ubuntu-latest
